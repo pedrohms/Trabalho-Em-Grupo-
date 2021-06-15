@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta neme="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CAIXA DE COMENTARIOS</title>
+	<style>
+		body{font-family: Arial, sans-serif;}
+		.content{display: flex;justify-content: center;}
+		.comentario{width: 100%; max-width: 500px;}
+		.form{display: flex;flex-direction:column;}
+		.field{padding: 10px;margin-bottom: 15px; border:1px solid #DDD;border-radius:5px;font-family:Arial, sans-serif;font-size:16px ;}
+		background-image: linear-gradient(45deg, white, red);
+		
+		textarea{height: 150px;}
+		div{
+    		background-color: rgba(0, 0, 0, 0.9);
+    		position: absolute;
+    		top:  50%;
+    		left: 50%;
+    		transform: translate(-50%, -50%);
+    		padding: 80px;
+    		border-radius: 15px;
+    		color: white;
+
+
+	</style>
+</head>
+<body>
+	<section class="content">
+			<div class="contato">
+				<h3>Caixa de Comentários</h3>
+				<form class="form" method="POST">
+					<input type="text" name="descricao" id="descricao" placeholder="Nome"><br><br>
+
+					<input type="text" name="precocompra" id="precocompra" placeholder="Email"><br><br>
+					
+					<textarea class="field" name="precovenda" id="precovenda" placeholder="Digite seu comentário">				
+					</textarea>
+					<input class="field" type="submit" value="Enviar" name="">
+	</section>
+
+
+</body>
+</html>
